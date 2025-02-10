@@ -179,7 +179,7 @@ const Home = () => {
 
                             <button className='bg-black rounded-xl py-4 px-4 text-white text-xl flex items-center gap-x-2 mt-16'>Join Waitlist<HiOutlineArrowNarrowRight color='white' size={24} /> </button>
                         </div>
-                        o
+                        
                     </div>
 
                 </div>
