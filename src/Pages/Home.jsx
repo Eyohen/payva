@@ -56,10 +56,10 @@ const Home = () => {
 
             {/* send money with payva in 3 simple steps */}
             <div
-                className="h-[850px] md:h-[700px]"
-                style={{ backgroundImage: `url(${hero2})` }}
+                className=""
+               
             >
-                <p className='text-center text-5xl font-semibold pt-[300px] md:pt-[250px]'>Send money with Pay<span className='text-[#FF6A2B]'>va</span> in </p>
+                <p className='text-center text-5xl font-semibold mt-24'>Send money with Pay<span className='text-[#FF6A2B]'>va</span> in </p>
                 <p className='text-center text-5xl font-semibold'>3 simple steps</p>
 
                 <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center gap-x-16 mt-12'>
@@ -90,10 +90,10 @@ const Home = () => {
 
             {/* send & receive money even faster than a rocket */}
             <div
-                className="h-[600px]"
-                style={{ backgroundImage: `url(${hero3})` }}
+                className=""
+             
             >
-                <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center items-center gap-x-16 pt-[850px] md:pt-[230px]'>
+                <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center items-center gap-x-16 mt-24'>
                     <div>
                         <p className='text-center text-5xl font-semibold'>Send & Recieve Money even faster</p>
                         <p className='text-center text-5xl font-semibold'>faster than a <span className='text-[#FF6A2B]'>Rocket</span></p>
@@ -111,16 +111,16 @@ const Home = () => {
 
             {/* the payva advantage: secure, fast and flexible */}
             <div
-                className="h-[700px]"
-                style={{ backgroundImage: `url(${hero3})` }}
+                className=""
+           
             >
-                <p className='text-center text-5xl font-semibold pt-[1100px] md:pt-[250px]'>The Pay<span className='text-[#FF6A2B]'>va</span> Advantage: Secure, Fast and Flexible </p>
+                <p className='text-center text-5xl font-semibold mt-24'>The Pay<span className='text-[#FF6A2B]'>va</span> Advantage: Secure, Fast and Flexible </p>
 
                 <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center gap-x-16 mt-12'>
 
                     <div>
 
-                        <div className='shadow-2xl bg-gray-100 w-[530px] h-[180px] rounded-3xl p-6'>
+                        <div className='shadow-2xl bg-gray-100 rounded-3xl p-6'>
                             <div className='flex gap-x-6'>
                                 <div>
                                     <p className='text-2xl font-medium'><span className='text-[#FF6A2B]'>Secure</span> Payments</p>
@@ -132,7 +132,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className='shadow-2xl bg-gray-100 w-[530px] h-[180px] rounded-3xl p-6 mt-6'>
+                        <div className='shadow-2xl bg-gray-100 rounded-3xl p-6 mt-6'>
                             <div className='flex gap-x-6'>
                                 <div>
                                     <p className='text-2xl font-medium'><span className='text-[#FF6A2B]'>Multi-Currency</span> Flexibility</p>
@@ -147,7 +147,7 @@ const Home = () => {
 
 
 
-                    <div className='shadow-2xl bg-gray-100 w-[400px] rounded-3xl flex flex-col items-center p-2'>
+                    <div className='shadow-2xl bg-gray-100 rounded-3xl flex flex-col items-center px-3 py-6'>
 
                         <p className='text-2xl font-medium'><span className='text-[#FF6A2B]'>Instant</span> Payout</p>
                         <p className='text-md text-center max-w-[350px]'>Our Web3-enabled platform guarantees fast and seamless international payouts, enabling you to send and recieve funds instantly with enhanced security and efficiency.</p>
@@ -163,15 +163,15 @@ const Home = () => {
             {/* payva is available */}
             <div className=''>
                 <div
-                    className="h-[700px]"
+                    className=""
                     // style={{ backgroundImage: `url(${group1})` }}
                 >
 
-                    <div className='flex justify-center md:justify-end px-32'>
+                    <div className='flex justify-center md:justify-end px-32 mt-24'>
 
                         <div>
 
-                            <p className='text-center text-5xl font-semibold pt-[1450px] md:pt-[150px]'>Pay<span className='text-[#FF6A2B]'>va</span> is available in Canada and Nigeria</p>
+                            <p className='text-center text-5xl font-semibold'>Pay<span className='text-[#FF6A2B]'>va</span> is available in Canada and Nigeria</p>
 
                             <p className='max-w-[480px] text-2xl mt-12'>We are expanding and growing fast, join our
                                 wait-list and we will give you a shout out when we launch in your country.
@@ -188,9 +188,9 @@ const Home = () => {
 
             {/* Download section */}
 
-            <div className='pt-[1450px] md:pt-0 px-4 md:px-0'>
+            <div className='px-4 md:px-0'>
 
-                <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center items-center gap-x-24 mt-2'>
+                <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center items-center gap-x-24 mt-24'>
 
                     <div>
                         <p className='text-5xl font-semibold '>Download our app and makePay</p>
