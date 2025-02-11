@@ -24,9 +24,9 @@ import nigeria from '../assets/nigeria.png'
 
 const Home = () => {
 
-        const [cad, setCad] = useState(157);
+        const [cad, setCad] = useState(1011);
         const [ngn, setNgn] = useState(1);
-        const exchangeRate = 150; // 1 NGN = 150 CAD
+        const exchangeRate = 1011; // 1011 NGN = 1 CAD
       
         const handleCadChange = (e) => {
           const cadValue = e.target.value;
@@ -60,7 +60,7 @@ const Home = () => {
 
                     <div>
 
-                    <p className='text-[#FF6A2B] text-6xl font-semibold mt-16 md:mt-32'>Seamless</p>
+                    <p className='text-[#FF6A2B] text-6xl font-semibold mt-12 md:mt-32'>Seamless</p>
                     <p className='text-6xl font-semibold mt-2'>global money</p>
                     <p className='text-6xl font-semibold mt-2'>transfers!</p>
 
@@ -80,8 +80,9 @@ const Home = () => {
           <input 
             className='font-semibold text-xl w-[100px] bg-gray-300 outline-none text-right' 
             placeholder='150' 
-            value={cad}
-            onChange={handleCadChange}
+            value={ngn}
+            onChange={handleNgnChange}
+        
           />
           <p className='flex items-center gap-x-2'>
             <img src={canada} className='w-12' alt='Canada Flag' />
@@ -99,8 +100,8 @@ const Home = () => {
           <input 
             className='font-semibold text-xl w-[100px] bg-gray-300 outline-none text-right' 
             placeholder='1' 
-            value={ngn}
-            onChange={handleNgnChange}
+            value={cad}
+            onChange={handleCadChange}
           />
           <p className='flex items-center gap-x-2'>
             <img src={nigeria} className='w-12' alt='Nigeria Flag' />
