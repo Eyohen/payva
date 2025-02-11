@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Navbar from '../components/Navbar'
 import hero from '../assets/hero1.png'
 import hero2 from '../assets/hero2.png'
@@ -17,29 +17,104 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { FaPlayCircle } from "react-icons/fa";
 import Hero2 from '../components/Hero2';
 import Footer from '../components/Footer'
+import { IoIosArrowDown } from "react-icons/io";
+import canada from '../assets/canada.png'
+import nigeria from '../assets/nigeria.png'
+
 
 const Home = () => {
+
+        const [cad, setCad] = useState(157);
+        const [ngn, setNgn] = useState(1);
+        const exchangeRate = 150; // 1 NGN = 150 CAD
+      
+        const handleCadChange = (e) => {
+          const cadValue = e.target.value;
+          setCad(cadValue);
+          setNgn(cadValue / exchangeRate);
+        };
+      
+        const handleNgnChange = (e) => {
+          const ngnValue = e.target.value;
+          setNgn(ngnValue);
+          setCad(ngnValue * exchangeRate);
+        };
+
+
+
+
+
+
     return (
         <div className=''>
 
             <div
-                className="h-[750px] bg-cover bg-center bg-no-repeat"
+                className="bg-cover h-min bg-center bg-no-repeat"
                 style={{ backgroundImage: `url(${hero})` }}
             >
                 <Navbar />
 
                 <div className='px-4 md:px-48'>
 
-                    <p className='text-[#FF6A2B] text-6xl font-semibold mt-32'>Seamless</p>
+                    <div className='flex flex-col md:flex-row md:gap-y-0 justify-between'>
+
+                    <div>
+
+                    <p className='text-[#FF6A2B] text-6xl font-semibold mt-16 md:mt-32'>Seamless</p>
                     <p className='text-6xl font-semibold mt-2'>global money</p>
                     <p className='text-6xl font-semibold mt-2'>transfers!</p>
-
 
                     <p className='max-w-[370px] mt-12 text-lg'>The most convenient money transfer platform
                         to help you easily and more efficiently manage your business</p>
 
-
                     <button className='bg-[#FF6A2B] rounded-xl py-4 px-4 text-white text-xl flex gap-x-2 mt-9'><FaPlayCircle color='white' size={24} /> Watch how it works</button>
+
+</div>
+
+{/* check out our rates */}
+ <div className='w-[350px] text-center'>
+      <p className='font-semibold text-3xl mt-32'>Check out our Rates</p>
+
+      <div className='bg-gray-300 px-6 py-4 rounded-2xl mt-4'>
+        <div className='flex justify-between items-center'>
+          <input 
+            className='font-semibold text-xl w-[100px] bg-gray-300 outline-none text-right' 
+            placeholder='150' 
+            value={cad}
+            onChange={handleCadChange}
+          />
+          <p className='flex items-center gap-x-2'>
+            <img src={canada} className='w-12' alt='Canada Flag' />
+            <IoIosArrowDown /> CAD
+          </p>
+        </div>
+      </div>
+
+      <button className='bg-gray-300 rounded-full px-1 py-1 mt-4'>
+        <IoIosArrowDown size={25} />
+      </button>
+
+      <div className='bg-gray-300 px-6 py-4 rounded-2xl mt-4'>
+        <div className='flex justify-between items-center'>
+          <input 
+            className='font-semibold text-xl w-[100px] bg-gray-300 outline-none text-right' 
+            placeholder='1' 
+            value={ngn}
+            onChange={handleNgnChange}
+          />
+          <p className='flex items-center gap-x-2'>
+            <img src={nigeria} className='w-12' alt='Nigeria Flag' />
+            <IoIosArrowDown /> NGN
+          </p>
+        </div>
+      </div>
+      <button className='bg-[#FF6A2B] rounded-xl py-4 px-4 text-white text-xl flex items-center gap-x-2 mt-16'>Transfer now<HiOutlineArrowNarrowRight color='white' size={24} /> </button>
+
+    </div>
+
+
+
+</div>
 
                     <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center gap-x-32 mt-12'>
 
@@ -57,9 +132,9 @@ const Home = () => {
             {/* send money with payva in 3 simple steps */}
             <div
                 className=""
-               
+
             >
-                <p className='text-center text-5xl font-semibold mt-[190px] md:mt-24'>Send money with Pay<span className='text-[#FF6A2B]'>va</span> in </p>
+                <p className='text-center text-5xl font-semibold mt-12 md:mt-24'>Send money with Pay<span className='text-[#FF6A2B]'>va</span> in </p>
                 <p className='text-center text-5xl font-semibold'>3 simple steps</p>
 
                 <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center gap-x-16 mt-12'>
@@ -91,7 +166,7 @@ const Home = () => {
             {/* send & receive money even faster than a rocket */}
             <div
                 className=""
-             
+
             >
                 <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center items-center gap-x-16 mt-24'>
                     <div>
@@ -112,7 +187,7 @@ const Home = () => {
             {/* the payva advantage: secure, fast and flexible */}
             <div
                 className=""
-           
+
             >
                 <p className='text-center text-5xl font-semibold mt-24'>The Pay<span className='text-[#FF6A2B]'>va</span> Advantage: Secure, Fast and Flexible </p>
 
@@ -164,7 +239,7 @@ const Home = () => {
             <div className=''>
                 <div
                     className=""
-                    // style={{ backgroundImage: `url(${group1})` }}
+                // style={{ backgroundImage: `url(${group1})` }}
                 >
 
                     <div className='flex justify-center md:justify-end px-32 mt-24'>
@@ -179,7 +254,7 @@ const Home = () => {
 
                             <button className='bg-black rounded-xl py-4 px-4 text-white text-xl flex items-center gap-x-2 mt-16'>Join Waitlist<HiOutlineArrowNarrowRight color='white' size={24} /> </button>
                         </div>
-                        
+
                     </div>
 
                 </div>
