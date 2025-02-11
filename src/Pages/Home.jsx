@@ -59,7 +59,7 @@ const Home = () => {
                 className=""
                
             >
-                <p className='text-center text-5xl font-semibold mt-24'>Send money with Pay<span className='text-[#FF6A2B]'>va</span> in </p>
+                <p className='text-center text-5xl font-semibold mt-[200px] md:mt-24'>Send money with Pay<span className='text-[#FF6A2B]'>va</span> in </p>
                 <p className='text-center text-5xl font-semibold'>3 simple steps</p>
 
                 <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center gap-x-16 mt-12'>
