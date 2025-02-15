@@ -109,7 +109,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <button className='bg-[#FF6A2B] rounded-xl py-4 px-4 text-white text-xl flex items-center gap-x-2 mt-16'>Transfer now<HiOutlineArrowNarrowRight color='white' size={24} /> </button>
+      <div className='flex justify-center'><button className='bg-[#FF6A2B] rounded-xl py-4 px-4 text-white text-xl flex items-center gap-x-2 mt-16'>Transfer now<HiOutlineArrowNarrowRight color='white' size={24} /> </button></div>
 
     </div>
 
@@ -269,7 +269,7 @@ const Home = () => {
                 <div className='flex flex-col md:flex-row gap-y-4 md:gap-y-0 justify-center items-center gap-x-24 mt-24'>
 
                     <div>
-                        <p className='text-5xl font-semibold '>Download our app and makePay</p>
+                        <p className='text-5xl font-semibold '>Download our app and make</p>
                         <p className='text-5xl font-semibold pt-[10px]'>the best out of Pay<span className='text-[#FF6A2B]'>va</span></p>
                     </div>
 
